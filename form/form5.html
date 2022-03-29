@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <fieldset>
+          <legend>개인 정보</legend>
+          <ul>
+            <li>
+              <label for="name">이름</label>
+              <input type="text" placeholder="여백없이 입력" />
+            </li>
+            <li>
+              <label for="phone">연락처</label>
+              <input type="text" placeholder="연락가능한 번호" />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>배송지 정보</legend>
+          <ul>
+            <li>
+              <label for="address">주소</label>
+              <input type="text" />
+            </li>
+            <li>
+              <label for="number">전화번호</label>
+              <input type="text" />
+            </li>
+            <li>
+              <label for="memo">메모</label>
+              <textarea name="memo" id="memo" cols="40" rows="3"></textarea>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>주문 정보</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="a" id="a" value="gwa" />과테말라
+              안티구아 (100g) <input type="text" name="no1" placeholder="0" />개
+            </li>
+            <li>
+              <input type="checkbox" name="a" id="a" value="indo" />인도네시아
+              만델링 (100g) <input type="text" name="no2" placeholder="0" />개
+            </li>
+            <li>
+              <input type="checkbox" name="a" id="a" value="tam" />탐라는도다
+              (블렌딩) (100g) <input type="text" name="no3" placeholder="0" />개
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <input type="submit" name="order" id="order" value="주문하기" />
+      <input type="reset" name="cancel" id="cancel" value="다시 작성" />
+    </form>
+  </body>
+</html>
