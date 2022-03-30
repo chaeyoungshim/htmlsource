@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        background-image: url(bg.png); /*백그라운드 이미지가 지정한 div보다 작으면 반복*/
+        background-repeat: no-repeat; /*repeat이 기본값*/
+        /*no-repeat; repeat-x; repeat-y;*/
+        /* x/y방향으로만 채우기 */
+        background-position: center bottom; /*no-repeat일 때 사용 가능*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+  </body>
+</html>
