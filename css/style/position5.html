@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #wrap {
+        position: relative; /* position : absolute 의 부모 역할 위해 설정 */
+        width: 300px;
+        height: 300px;
+        border: 1px solid #ccc;
+      }
+      .box {
+        /* wrap을 부모로 잡아서 그 영역 내에서 자유롭게 상대적으로 위치 지정 가능 */
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        border: 1px solid red;
+      }
+      #crd1 {
+        top: 0;
+        left: 0;
+      }
+      #crd2 {
+        top: 0;
+        right: 0;
+      }
+      #crd3 {
+        bottom: 0;
+        left: 0;
+      }
+      #crd4 {
+        bottom: 0;
+        right: 0;
+      }
+      #crd5 {
+        top: 120px;
+        left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="box" id="crd1">crd1</div>
+      <div class="box" id="crd2">crd2</div>
+      <div class="box" id="crd3">crd3</div>
+      <div class="box" id="crd4">crd4</div>
+      <div class="box" id="crd5">crd5</div>
+    </div>
+  </body>
+</html>

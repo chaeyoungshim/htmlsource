@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        /* 이 영역 내에 박스들을 자유롭게 배치시키기 위해서는 container를 부모로 잡아야 함 */
+        /* 근데 부모 영역을 벗어나도 됨 => -값 주면 가능 */
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: yellow;
+        position: relative;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      .a {
+        background-color: red;
+        top: 0;
+        left: 0;
+      }
+      .b {
+        background-color: green;
+        top: 50px;
+        left: 50px;
+      }
+      .c {
+        background-color: blue;
+        top: 100px;
+        left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a">box a</div>
+      <div class="box b">box b</div>
+      <div class="box c">box c</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor debitis
+      error ipsa voluptates alias voluptatem reiciendis veritatis eum voluptatum
+      ut! Fugit voluptatum tenetur quam velit? Accusantium nemo magni maiores
+      exercitationem!
+    </p>
+  </body>
+</html>
